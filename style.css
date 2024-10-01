@@ -40,3 +40,57 @@ body {
     margin-bottom: 10%;
     /* Adiciona uma margem inferior de 10% da altura do elemento para espaçamento abaixo do título `<h2>`. */
 }
+input[type="text"] {
+    height: 40px;
+    /* Define a altura do campo de texto como 40px. */
+}
+
+input[type="text"] {
+    font-size: 24px;
+    /* Define o tamanho da fonte do texto inserido no campo de texto como 24px. */
+}
+
+button {
+    background: #EE4477;
+    /* Define a cor de fundo do botão como rosa (#EE4477). */
+
+    border: none;
+    /* Remove qualquer borda do botão. */
+
+    color: #fff;
+    /* Define a cor do texto do botão como branco (#fff). */
+
+    display: inline-block;
+    /* Faz o botão ser exibido como um bloco, permitindo que ele fique em linha com outros elementos, mantendo suas propriedades de bloco. */
+
+    padding: 10px 25px;
+    /* Define o preenchimento interno do botão como 10px na vertical e 25px na horizontal, criando um espaçamento interno. */
+
+    font-size: 18px;
+    /* Define o tamanho da fonte do texto dentro do botão como 18px. */
+
+    text-transform: uppercase;
+    /* Transforma o texto dentro do botão para letras maiúsculas. */
+
+    font-family: poppins;
+    /* Define a fonte do texto do botão como "Poppins" (certifique-se de que a fonte esteja importada na página). */
+
+    letter-spacing: 2px;
+    /* Adiciona um espaçamento de 2px entre as letras do texto dentro do botão. */
+
+    font-weight: bold;
+    /* Define o peso da fonte como "bold" (negrito), deixando o texto mais grosso. */
+}
+
+input[type="radio"] {
+    width: 20px;
+    /* Define a largura dos botões de rádio como 20px. */
+
+    height: 20px;
+    /* Define a altura dos botões de rádio como 20px. */
+}
+
+b {
+    font-size: 30px;
+    /* Define o tamanho da fonte para o elemento <b> como 30px, destacando textos em negrito. */
+}
