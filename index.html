@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora Simples Usando Javascript</title>
     <link rel="stylesheet" src="style.css">
 </head>
 <body>
+    <div class="wrapper">
+        <!-- Div que envolve todo o conteúdo da calculadora, estilizada com a classe 'wrapper'. -->
+    
+        <h2>Simple Calculator</h2>
+        <!-- Título da calculadora, exibido no topo como "Simple Calculator". -->
+    
+        <input id="num-one" name="num-one" type="text">
+        <!-- Campo de entrada de texto onde o usuário insere o primeiro número. Identificado pelo id 'num-one'. -->
+    
+        <input id="num-two" name="num-two" type="text">
+        <!-- Campo de entrada de texto onde o usuário insere o segundo número. Identificado pelo id 'num-two'. -->
+    
+        <br><br>
+        <!-- Quebras de linha para espaçamento entre os elementos. -->
+    
+        <input checked id="box1" name="sign-area" type="radio" value="add">
+        <!-- Botão de seleção do tipo rádio para a operação de adição. Está marcado por padrão (checked). Identificado pelo id 'box1'. -->
+    
+        <b>+</b>
+        <!-- Exibe o símbolo de adição "+" ao lado do botão de rádio. -->
+    
+        <input id="box2" name="sign-area" type="radio" value="subtract">
+        <!-- Botão de seleção do tipo rádio para a operação de subtração. Identificado pelo id 'box2'. -->
+    
+        <b>-</b>
+        <!-- Exibe o símbolo de subtração "-" ao lado do botão de rádio. -->
+    
+        <input id="box3" name="sign-area" type="radio" value="multiply">
+        <!-- Botão de seleção do tipo rádio para a operação de multiplicação. Identificado pelo id 'box3'. -->
+    
+        <b>*</b>
+        <!-- Exibe o símbolo de multiplicação "*" ao lado do botão de rádio. -->
+    
+        <input id="box4" name="sign-area" type="radio" value="divide">
+        <!-- Botão de seleção do tipo rádio para a operação de divisão. Identificado pelo id 'box4'. -->
+    
+        <b>/</b>
+        <!-- Exibe o símbolo de divisão "/" ao lado do botão de rádio. -->
+    
+        <br><br>
+        <!-- Quebras de linha adicionais para espaçamento. -->
+    
+        <button onclick="outcome()" type="button">calculate</button>
+        <!-- Botão que, ao ser clicado, chama a função 'outcome()' para realizar a operação e exibir o resultado. -->
+    
+        <h1 id="resultArea"></h1>
+        <!-- Área onde o resultado do cálculo será exibido. Identificado pelo id 'resultArea'. -->
+    
+    </div>
     
 </body>
 </html>
