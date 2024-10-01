@@ -1,19 +1,42 @@
 body {
-	background: #6eb37f;
+    background: #6eb37f;
+    /* Define a cor de fundo do corpo da página como um verde (#6eb37f). */
 }
+
 .wrapper {
-	width: 400px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background: #262626;
-	padding: 50px;
-	color: #fff;
-	text-align: center;
+    width: 400px;
+    /* Define a largura do elemento 'wrapper' como 400px. */
+
+    position: absolute;
+    /* Posiciona o 'wrapper' de forma absoluta, permitindo ajustá-lo em relação à página. */
+
+    top: 50%;
+    left: 50%;
+    /* Centraliza o 'wrapper' verticalmente e horizontalmente em relação à janela da página. */
+
+    transform: translate(-50%, -50%);
+    /* Ajusta a posição para centralizar o 'wrapper' com precisão, deslocando-o pela metade de sua própria largura e altura. */
+
+    background: #262626;
+    /* Define o fundo do 'wrapper' com uma cor cinza escura (#262626). */
+
+    padding: 50px;
+    /* Adiciona um preenchimento interno de 50px em todos os lados do 'wrapper'. */
+
+    color: #fff;
+    /* Define a cor do texto dentro do 'wrapper' como branco (#fff). */
+
+    text-align: center;
+    /* Centraliza todo o texto dentro do 'wrapper'. */
 }
+
 .wrapper h2 {
-	text-transform: uppercase;
-	font-family: poppins;
-	margin-bottom: 10%;
+    text-transform: uppercase;
+    /* Transforma o texto do título `<h2>` para letras maiúsculas. */
+
+    font-family: poppins;
+    /* Define a fonte do texto como "Poppins" (certifique-se de que essa fonte esteja importada na página). */
+
+    margin-bottom: 10%;
+    /* Adiciona uma margem inferior de 10% da altura do elemento para espaçamento abaixo do título `<h2>`. */
 }
