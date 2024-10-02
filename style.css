@@ -1,96 +1,78 @@
+/* Define a cor de fundo do corpo da página */
 body {
-    background: #6eb37f;
-    /* Define a cor de fundo do corpo da página como um verde (#6eb37f). */
+	background: linear-gradient(135deg, #6ea5b3, #b3d4ea); /* Gradiente entre dois tons de azul */
+	margin: 0; /* Remove as margens padrão */
+	height: 100vh; /* Define altura da página como altura total da tela */
+	display: flex; /* Usa flexbox para centralizar o conteúdo */
+	justify-content: center; /* Centraliza horizontalmente */
+	align-items: center; /* Centraliza verticalmente */
+	font-family: 'Poppins', sans-serif; /* Define a fonte padrão como Poppins */
 }
 
+/* Define o estilo do contêiner central (wrapper) */
 .wrapper {
-    width: 400px;
-    /* Define a largura do elemento 'wrapper' como 400px. */
-
-    position: absolute;
-    /* Posiciona o 'wrapper' de forma absoluta, permitindo ajustá-lo em relação à página. */
-
-    top: 50%;
-    left: 50%;
-    /* Centraliza o 'wrapper' verticalmente e horizontalmente em relação à janela da página. */
-
-    transform: translate(-50%, -50%);
-    /* Ajusta a posição para centralizar o 'wrapper' com precisão, deslocando-o pela metade de sua própria largura e altura. */
-
-    background: #262626;
-    /* Define o fundo do 'wrapper' com uma cor cinza escura (#262626). */
-
-    padding: 50px;
-    /* Adiciona um preenchimento interno de 50px em todos os lados do 'wrapper'. */
-
-    color: #fff;
-    /* Define a cor do texto dentro do 'wrapper' como branco (#fff). */
-
-    text-align: center;
-    /* Centraliza todo o texto dentro do 'wrapper'. */
+	width: 400px; /* Define a largura do contêiner */
+	background: #262626; /* Cor de fundo escura */
+	padding: 50px; /* Espaçamento interno */
+	border-radius: 15px; /* Bordas arredondadas */
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+	color: #fff; /* Cor do texto em branco */
+	text-align: center; /* Alinhamento do texto ao centro */
 }
 
+/* Estiliza o título <h2> dentro do wrapper */
 .wrapper h2 {
-    text-transform: uppercase;
-    /* Transforma o texto do título `<h2>` para letras maiúsculas. */
-
-    font-family: poppins;
-    /* Define a fonte do texto como "Poppins" (certifique-se de que essa fonte esteja importada na página). */
-
-    margin-bottom: 10%;
-    /* Adiciona uma margem inferior de 10% da altura do elemento para espaçamento abaixo do título `<h2>`. */
+	text-transform: uppercase; /* Converte o texto para maiúsculas */
+	font-family: 'Poppins', sans-serif; /* Usa a fonte Poppins */
+	color: #EE4477; /* Cor de destaque para o título */
+	margin-bottom: 20px; /* Espaçamento inferior */
+	letter-spacing: 2px; /* Espaçamento entre as letras */
 }
+
+/* Estiliza os inputs do tipo texto */
 input[type="text"] {
-    height: 40px;
-    /* Define a altura do campo de texto como 40px. */
+	width: 100%; /* Largura total do input */
+	height: 40px; /* Altura dos campos de texto */
+	margin-bottom: 15px; /* Espaçamento inferior */
+	border: none; /* Remove a borda padrão */
+	border-radius: 8px; /* Bordas arredondadas */
+	padding: 10px; /* Espaçamento interno */
+	font-size: 18px; /* Tamanho da fonte */
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
 }
 
-input[type="text"] {
-    font-size: 24px;
-    /* Define o tamanho da fonte do texto inserido no campo de texto como 24px. */
-}
-
+/* Estiliza o botão */
 button {
-    background: #EE4477;
-    /* Define a cor de fundo do botão como rosa (#EE4477). */
-
-    border: none;
-    /* Remove qualquer borda do botão. */
-
-    color: #fff;
-    /* Define a cor do texto do botão como branco (#fff). */
-
-    display: inline-block;
-    /* Faz o botão ser exibido como um bloco, permitindo que ele fique em linha com outros elementos, mantendo suas propriedades de bloco. */
-
-    padding: 10px 25px;
-    /* Define o preenchimento interno do botão como 10px na vertical e 25px na horizontal, criando um espaçamento interno. */
-
-    font-size: 18px;
-    /* Define o tamanho da fonte do texto dentro do botão como 18px. */
-
-    text-transform: uppercase;
-    /* Transforma o texto dentro do botão para letras maiúsculas. */
-
-    font-family: poppins;
-    /* Define a fonte do texto do botão como "Poppins" (certifique-se de que a fonte esteja importada na página). */
-
-    letter-spacing: 2px;
-    /* Adiciona um espaçamento de 2px entre as letras do texto dentro do botão. */
-
-    font-weight: bold;
-    /* Define o peso da fonte como "bold" (negrito), deixando o texto mais grosso. */
+	background: #EE4477; /* Cor de fundo rosa do botão */
+	border: none; /* Remove a borda padrão */
+	color: #fff; /* Cor do texto do botão em branco */
+	display: inline-block; /* Define o botão como bloco inline */
+	padding: 12px 30px; /* Espaçamento interno do botão */
+	font-size: 18px; /* Tamanho da fonte do botão */
+	text-transform: uppercase; /* Converte o texto para maiúsculas */
+	font-family: 'Poppins', sans-serif; /* Define a fonte Poppins */
+	letter-spacing: 2px; /* Define espaçamento entre as letras */
+	font-weight: bold; /* Define o texto em negrito */
+	border-radius: 8px; /* Borda arredondada */
+	cursor: pointer; /* Cursor de mão ao passar o mouse */
+	box-shadow: 0px 4px 10px rgba(238, 68, 119, 0.4); /* Sombra no botão para profundidade */
+	transition: all 0.3s ease; /* Transição suave para hover */
 }
 
+/* Efeito hover para o botão */
+button:hover {
+	background: #d63d6e; /* Cor de fundo mais escura quando o mouse passa */
+}
+
+/* Estiliza os inputs do tipo radio */
 input[type="radio"] {
-    width: 20px;
-    /* Define a largura dos botões de rádio como 20px. */
-
-    height: 20px;
-    /* Define a altura dos botões de rádio como 20px. */
+	width: 20px; /* Define a largura dos botões de rádio */
+	height: 20px; /* Define a altura dos botões de rádio */
+	margin-right: 10px; /* Espaçamento à direita do botão */
 }
 
+/* Estiliza a tag <b> (negrito) */
 b {
-    font-size: 30px;
-    /* Define o tamanho da fonte para o elemento <b> como 30px, destacando textos em negrito. */
+	font-size: 30px; /* Tamanho da fonte em negrito */
+	color: #fff; /* Cor do texto em branco */
 }
