@@ -1,78 +1,121 @@
-/* Define a cor de fundo do corpo da página */
+/* Estilos Gerais */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+/* Fundo da Página com Gradiente */
 body {
-	background: linear-gradient(135deg, #6ea5b3, #b3d4ea); /* Gradiente entre dois tons de azul */
-	margin: 0; /* Remove as margens padrão */
-	height: 100vh; /* Define altura da página como altura total da tela */
-	display: flex; /* Usa flexbox para centralizar o conteúdo */
-	justify-content: center; /* Centraliza horizontalmente */
-	align-items: center; /* Centraliza verticalmente */
-	font-family: 'Poppins', sans-serif; /* Define a fonte padrão como Poppins */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: linear-gradient(135deg, #e0f7fa, #b2ebf2, #80deea);
+	color: #333;
 }
 
-/* Define o estilo do contêiner central (wrapper) */
-.wrapper {
-	width: 400px; /* Define a largura do contêiner */
-	background: #262626; /* Cor de fundo escura */
-	padding: 50px; /* Espaçamento interno */
-	border-radius: 15px; /* Bordas arredondadas */
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
-	color: #fff; /* Cor do texto em branco */
-	text-align: center; /* Alinhamento do texto ao centro */
+/* Contêiner Central */
+.container {
+	width: 90%;
+	max-width: 400px;
+	padding: 20px;
+	background: linear-gradient(145deg, #ffffff, #e0f7fa);
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	transition: transform 0.3s ease;
 }
 
-/* Estiliza o título <h2> dentro do wrapper */
-.wrapper h2 {
-	text-transform: uppercase; /* Converte o texto para maiúsculas */
-	font-family: 'Poppins', sans-serif; /* Usa a fonte Poppins */
-	color: #EE4477; /* Cor de destaque para o título */
-	margin-bottom: 20px; /* Espaçamento inferior */
-	letter-spacing: 2px; /* Espaçamento entre as letras */
+.container:hover {
+	transform: scale(1.05);
 }
 
-/* Estiliza os inputs do tipo texto */
+/* Título */
+.container h2 {
+	font-size: 1.8em;
+	color: #00796b;
+	margin-bottom: 20px;
+}
+
+/* Campos de Entrada */
 input[type="text"] {
-	width: 100%; /* Largura total do input */
-	height: 40px; /* Altura dos campos de texto */
-	margin-bottom: 15px; /* Espaçamento inferior */
-	border: none; /* Remove a borda padrão */
-	border-radius: 8px; /* Bordas arredondadas */
-	padding: 10px; /* Espaçamento interno */
-	font-size: 18px; /* Tamanho da fonte */
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+	width: 80%;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-size: 1em;
+	border: 1px solid #b2dfdb;
+	border-radius: 8px;
+	outline: none;
+	transition: box-shadow 0.3s ease;
 }
 
-/* Estiliza o botão */
-button {
-	background: #EE4477; /* Cor de fundo rosa do botão */
-	border: none; /* Remove a borda padrão */
-	color: #fff; /* Cor do texto do botão em branco */
-	display: inline-block; /* Define o botão como bloco inline */
-	padding: 12px 30px; /* Espaçamento interno do botão */
-	font-size: 18px; /* Tamanho da fonte do botão */
-	text-transform: uppercase; /* Converte o texto para maiúsculas */
-	font-family: 'Poppins', sans-serif; /* Define a fonte Poppins */
-	letter-spacing: 2px; /* Define espaçamento entre as letras */
-	font-weight: bold; /* Define o texto em negrito */
-	border-radius: 8px; /* Borda arredondada */
-	cursor: pointer; /* Cursor de mão ao passar o mouse */
-	box-shadow: 0px 4px 10px rgba(238, 68, 119, 0.4); /* Sombra no botão para profundidade */
-	transition: all 0.3s ease; /* Transição suave para hover */
+input[type="text"]:focus {
+	box-shadow: 0 0 8px rgba(0, 150, 136, 0.3);
 }
 
-/* Efeito hover para o botão */
-button:hover {
-	background: #d63d6e; /* Cor de fundo mais escura quando o mouse passa */
-}
-
-/* Estiliza os inputs do tipo radio */
+/* Botões de Operação */
 input[type="radio"] {
-	width: 20px; /* Define a largura dos botões de rádio */
-	height: 20px; /* Define a altura dos botões de rádio */
-	margin-right: 10px; /* Espaçamento à direita do botão */
+	display: none;
 }
 
-/* Estiliza a tag <b> (negrito) */
-b {
-	font-size: 30px; /* Tamanho da fonte em negrito */
-	color: #fff; /* Cor do texto em branco */
+input[type="radio"] + b {
+	font-size: 1.5em;
+	padding: 10px 15px;
+	margin: 0 5px;
+	color: #00796b;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	border-radius: 8px;
+}
+
+input[type="radio"]:checked + b {
+	background-color: #00796b;
+	color: white;
+}
+
+/* Botão de Calcular */
+button {
+	padding: 12px 20px;
+	margin-top: 15px;
+	font-size: 1em;
+	color: white;
+	background: linear-gradient(145deg, #26a69a, #00796b);
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background: linear-gradient(145deg, #00796b, #004d40);
+}
+
+/* Resultado */
+#areaResultado {
+	margin-top: 20px;
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #004d40;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+	.container {
+			width: 100%;
+			padding: 15px;
+	}
+
+	h2 {
+			font-size: 1.5em;
+	}
+
+	input[type="text"] {
+			width: 100%;
+	}
+
+	#areaResultado {
+			font-size: 1.5em;
+	}
 }
