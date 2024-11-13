@@ -51,4 +51,3 @@ function calcular() {
     resultadoArea.innerHTML = `Resultado: <strong>${resultado.toFixed(2)}</strong>`;
     resultadoArea.style.color = "green"; // Cor verde para um resultado bem-sucedido
 }
-
