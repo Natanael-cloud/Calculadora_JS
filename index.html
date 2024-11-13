@@ -1,63 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-	<!-- Declaração do tipo de documento como HTML5 -->
 	<meta charset="UTF-8">
-	<!-- Define o conjunto de caracteres como UTF-8 para suportar a maioria dos caracteres e símbolos -->
 	<title>Calculadora Simples usando Javascript</title>
-	<!-- Define o título da página que aparecerá na aba do navegador -->
 	<link href="style.css" rel="stylesheet">
-	<!-- Link para o arquivo CSS externo chamado "estilo.css" para estilização da página -->
 </head>
 <body>
-	<!-- Início do corpo da página HTML -->
 	<div class="container">
-		<!-- Criação de um contêiner com a classe "container" para centralizar e agrupar os elementos da calculadora -->
 		<h2>Calculadora Simples</h2>
-		<!-- Cabeçalho de nível 2 com o título da calculadora -->
-		<input id="num-um" name="num-um" type="text"> 
-		<!-- Campo de input para o primeiro número, com o id "num-um" e nome "num-um" para identificação e recuperação no JavaScript -->
-		<input id="num-dois" name="num-dois" type="text">
-		<!-- Campo de input para o segundo número, com o id "num-dois" e nome "num-dois" -->
-		<br>
-		<!-- Quebra de linha para espaçamento visual entre os inputs -->
-		<br>
-		<!-- Outra quebra de linha para espaçamento adicional -->
+		<input id="num-um" name="num-um" type="text" placeholder="Primeiro Número"> 
+		<input id="num-dois" name="num-dois" type="text" placeholder="Segundo Número">
+		<br><br>
 
-		<!-- Grupo de botões de rádio para escolher a operação matemática (adição, subtração, multiplicação, divisão) -->
-		<input checked id="soma" name="operacao" type="radio" value="adicionar">
-		<!-- Botão de rádio selecionado por padrão para adição, com o id "soma" e o valor "adicionar" -->
-		<b>+</b>
-		<!-- Texto em negrito representando a operação de adição -->
-		
-		<input id="subtracao" name="operacao" type="radio" value="subtrair">
-		<!-- Botão de rádio para subtração, com o id "subtracao" e o valor "subtrair" -->
-		<b>-</b>
-		<!-- Texto em negrito representando a operação de subtração -->
-		
-		<input id="multiplicacao" name="operacao" type="radio" value="multiplicar">
-		<!-- Botão de rádio para multiplicação, com o id "multiplicacao" e o valor "multiplicar" -->
-		<b>*</b>
-		<!-- Texto em negrito representando a operação de multiplicação -->
-		
-		<input id="divisao" name="operacao" type="radio" value="dividir">
-		<!-- Botão de rádio para divisão, com o id "divisao" e o valor "dividir" -->
-		<b>/</b>
-		<!-- Texto em negrito representando a operação de divisão -->
-		<br>
-		<!-- Quebra de linha para espaçamento entre os botões de rádio e o botão de cálculo -->
-		<br>
-		<!-- Outra quebra de linha para espaçamento adicional -->
+		<!-- Grupo de botões de rádio para operações -->
+		<label>
+            <input id="soma" name="operacao" type="radio" value="adicionar" checked>
+            <b>+</b>
+        </label>
+		<label>
+            <input id="subtracao" name="operacao" type="radio" value="subtrair">
+            <b>-</b>
+        </label>
+		<label>
+            <input id="multiplicacao" name="operacao" type="radio" value="multiplicar">
+            <b>*</b>
+        </label>
+		<label>
+            <input id="divisao" name="operacao" type="radio" value="dividir">
+            <b>/</b>
+        </label>
+		<br><br>
 
 		<button onclick="calcular()" type="button">Calcular</button>
-		<!-- Botão que, ao ser clicado, chama a função JavaScript "calcular()" para realizar o cálculo -->
-		
 		<h1 id="areaResultado"></h1>
-		<!-- Título de nível 1 que exibirá o resultado da operação matemática. O conteúdo será atualizado dinamicamente via JavaScript usando o id "areaResultado" -->
 	</div>
 	
 	<script src="index.js"></script>
-	<!-- Inclui o arquivo JavaScript externo "script.js", que contém a lógica da calculadora -->
 </body>
 </html>
 
